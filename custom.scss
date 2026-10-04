@@ -1,0 +1,161 @@
+/*-- scss:defaults --*/
+
+// палитра
+$emerald:      #0F3D33;   // основной, тёмный изумруд
+$emerald-deep: #0A2A24;   // для тёмной темы и глубоких заливок
+$rose:         #E0607E;   // розовый акцент, комплементарный изумруду (~345° против ~167°)
+$blush:        $rose;
+$blush-soft:   #FBEBEE;   // очень светлый розовый для фонов
+$ink:          #16211E;
+$paper:        #FBF9F7;
+
+// базовые переменные Bootstrap
+$primary:      $emerald;
+$body-bg:      $paper;
+$body-color:   $ink;
+$link-color:   $emerald;
+$link-hover-color: darken($emerald, 8%);
+
+// код и цитаты
+$code-color:         $emerald;
+$code-bg:            $blush-soft;
+$blockquote-border-color: $blush;
+
+$grid-body-width: 850px;
+
+// шапка: белый фон, изумрудный текст, розовый ховер
+$navbar-bg:       #fff;
+$navbar-fg:       $emerald;
+$navbar-hl:       $rose;
+
+/*-- scss:rules --*/
+
+$hover-transition: .2s ease;
+
+// плавные ховеры для всех ссылок и элементов шапки
+a,
+.navbar .navbar-brand,
+.navbar .navbar-title,
+.navbar .nav-link,
+.navbar .quarto-navigation-tool,
+.navbar .navbar-toggler {
+  transition: color $hover-transition, text-decoration-color $hover-transition;
+}
+
+// ховер в шапке — розовый (заголовок, ссылки, иконки)
+.navbar .navbar-brand-container:hover .navbar-title,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .quarto-navigation-tool:hover {
+  color: $rose !important;
+}
+
+// ссылки: тонкое приглушённое подчёркивание в тон текста, ярче на ховере
+a {
+  text-decoration-color: rgba($emerald, .3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover,
+  &:focus {
+    text-decoration-color: currentColor;
+  }
+}
+
+// активный пункт меню — розовый
+.navbar .nav-link.active {
+  color: $rose !important;
+}
+
+// заголовки изумрудные
+h1, h2, h3 { color: $emerald; }
+
+// иерархия: H1 крупный и плотный, H2 заметно мельче и легче
+h1.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  border-bottom: none;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
+// плотнее вертикальный ритм
+#title-block-header {
+  margin-block-end: .75rem;
+}
+
+main.content {
+  margin-top: 1.5rem;
+}
+
+main.content > p,
+main.content section > p,
+main.content ul {
+  margin-bottom: .75rem;
+}
+
+// карточки постов в ленте
+.quarto-listing-default .quarto-post {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.quarto-listing .list-item {
+  border-bottom: 1px solid rgba($emerald, .12);
+}
+
+// категории и теги
+.listing-category {
+  background: $blush-soft;
+  color: $emerald;
+  border-color: transparent;
+}
+
+// кнопка «All posts»
+a.btn-emerald {
+  display: inline-block;
+  padding: .3rem .9rem;
+  font-size: .875rem;
+  line-height: 1.4;
+  background: $emerald;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color $hover-transition, transform $hover-transition;
+
+  &:hover,
+  &:focus {
+    background: $rose;
+    color: #fff;
+    transform: translateY(-1px);
+  }
+}
+
+// лента на главной: без лишних отступов сверху и снизу
+.quarto-listing-container-default {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+}
+
+.quarto-listing-default .quarto-post:first-child {
+  padding-top: .5rem;
+}
+
+.quarto-listing-default .quarto-post:last-child {
+  padding-bottom: 0;
+}
+
+// блок «Latest» прячется, пока в ленте нет ни одного поста
+.latest-section:not(:has(.quarto-post)) {
+  display: none;
+}

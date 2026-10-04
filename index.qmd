@@ -1,15 +1,31 @@
 ---
-title: "learning-log"
-listing:
-  contents: posts
-  feed: true
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+title: "Learning to read cells"
 page-layout: full
-title-block-banner: true
+listing:
+  - id: recent
+    contents: posts
+    sort: "date desc"
+    type: default
+    max-items: 5
+    categories: false
+    feed: true
 ---
 
+I spent eight years making websites work. Now I'm heading towards computational biology: single-cell data, brain tissue, and the tools that make sense of them.
 
+## What I'm learning now
+- Linear algebra — [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra) by 3Blue1Brown
+- The command line and dev tooling — [MIT Missing Semester](https://missing.csail.mit.edu/)
+- Biology from the ground up — [Khan Academy High School Biology](https://www.khanacademy.org/science/high-school-biology)
+
+
+Next up: Python and R for data analysis, then statistics and single-cell workflows.
+
+::: {.latest-section}
+## Latest
+
+:::{#recent}
+:::
+
+[All posts →](posts.qmd){.btn-emerald}
+:::

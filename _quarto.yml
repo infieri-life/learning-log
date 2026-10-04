@@ -4,20 +4,25 @@ project:
 website:
   description: "A blog built with Quarto"
   site-url: https://your-website-url.example.com # you must change this appropriately for RSS feeds to work properly
-  title: "learning-log"
+  title: "infieri"
+  favicon: logo.svg
   navbar:
+    pinned: true
+    logo: logo.svg
+    logo-alt: "infieri"
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/infieri-life
       - icon: bluesky
-        href: https://bsky.app/
+        href: https://bsky.app/profile/твой-профиль
+      - icon: envelope-at-fill
+        href: mailto:infieri.life@gmail.com
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: [cosmo, custom.scss]
     css: styles.css
+    anchor-sections: false
 
 
 
