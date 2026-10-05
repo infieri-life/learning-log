@@ -1,22 +1,26 @@
 ---
 title: "About"
-image: profile.jpg
-about:
-  template: jolla
-  links:
-    - icon: bluesky
-      text: Bluesky
-      href: https://bsky.app/
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com/infieri-life
-    - icon: envelope-at-fill
-      text: Email
-      href: mailto:infieri.life@gmail.com
-
+page-layout: full
+body-classes: about-page
 ---
 
-About this blog
+I spent eight years making websites work. At some point I realized I didn't want to spend the rest of my life changing the color of buttons. 
+
+My interest in biology was always there, but it was quiet. As a teenager, I watched *ER*, *Grey's Anatomy*, and *House, M.D.*, and loved the moments when someone dug into a problem nobody understood and found an answer that changed a patient's life. At school, though, science didn't click: chemistry a little, biology and physics not at all. Years later, I got curious about how the body actually works, and that curiosity kept pulling me deeper. 
+
+I thought about medicine, but years of training felt out of reach. Becoming a scientist wasn't something people around me even considered: the pay was tiny, and you rarely heard what researchers were actually working on. I liked programming, so I built websites. 
+
+Now biology is becoming a data science, and that's exactly where I want to be. Bioinformatics is my way in, then a master's degree, with bioengineering as the goal. 
+
+Of course I'd love to change the world and cure every disease. But if I end up doing hard, meaningful work and doing it well, that will be more than enough. 
+
+This site is my open log: what I study each week, what I build, and where I get stuck. 
+
+Outside of the lab-to-be, I'm learning to run, which turns out to be just as humbling as learning biology.
+
+::: {.about-links}
+[[]{.bi .bi-github} GitHub](https://github.com/infieri-life){target="_blank"}
+[[]{.bi .bi-bluesky} Bluesky](https://bsky.app/){target="_blank"}
+[[]{.bi .bi-linkedin} LinkedIn](https://linkedin.com){target="_blank"}
+[[]{.bi .bi-envelope-at-fill} Email](mailto:infieri.life@gmail.com)
+:::

@@ -382,3 +382,37 @@ div.quarto-post:hover .listing-title a,
 div.quarto-post .listing-title a:focus-visible {
   color: $rose;
 }
+
+// About и посты: текст узкой колонкой — так легче читать
+.about-page main.content > p,
+main.content.quarto-banner-title-block > *,
+main.content.quarto-banner-title-block > section > * {
+  max-width: 38rem;
+}
+
+// ряд ссылок на соцсети внизу About
+.about-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1.5rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .3rem .85rem;
+    border-radius: 999px;
+    background: rgba($emerald, .06);
+    color: $emerald;
+    font-size: .9rem;
+    text-decoration: none;
+    transition: background-color $hover-transition, color $hover-transition;
+
+    &:hover,
+    &:focus-visible {
+      background: $blush-soft;
+      color: $rose;
+    }
+  }
+}

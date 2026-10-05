@@ -15,9 +15,11 @@ website:
       - icon: github
         href: https://github.com/infieri-life
         aria-label: GitHub
+        target: _blank
       - icon: bluesky
         href: https://bsky.app/profile/твой-профиль
         aria-label: Bluesky
+        target: _blank
       - icon: envelope-at-fill
         href: mailto:infieri.life@gmail.com
         aria-label: Email
