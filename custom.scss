@@ -2,7 +2,6 @@
 
 // палитра
 $emerald:      #0F3D33;   // основной, тёмный изумруд
-$emerald-deep: #0A2A24;   // для тёмной темы и глубоких заливок
 $rose:         #E0607E;   // розовый акцент, комплементарный изумруду (~345° против ~167°)
 $blush:        $rose;
 $blush-soft:   #FBEBEE;   // очень светлый розовый для фонов
@@ -108,8 +107,9 @@ main.content ul {
   margin-bottom: 0;
 }
 
-.quarto-listing .list-item {
-  border-bottom: 1px solid rgba($emerald, .12);
+// разделитель между постами — изумрудный, в тон сайту (у Quarto серый)
+div.quarto-post {
+  border-bottom-color: rgba($emerald, .12);
 }
 
 // категории и теги
@@ -158,4 +158,227 @@ a.btn-emerald {
 // блок «Latest» прячется, пока в ленте нет ни одного поста
 .latest-section:not(:has(.quarto-post)) {
   display: none;
+}
+
+// дата поста без подписи «Published»
+.quarto-title-meta-heading {
+  display: none;
+}
+
+// описание поста — с отступом от заголовка
+#title-block-header.quarto-title-block.default .quarto-title-banner .description {
+  margin-top: .75rem;
+}
+
+// дата в шапке поста — под описанием, приглушённая
+.quarto-title-banner .quarto-title-meta {
+  margin-top: .5rem;
+  color: rgba($ink, .6);
+  font-size: .9rem;
+}
+
+// меньше отступ между шапкой поста и текстом
+.quarto-title-banner {
+  margin-bottom: 0;
+}
+
+#title-block-header:has(.quarto-title-banner) {
+  margin-block-end: 0;
+}
+
+main.content.quarto-banner-title-block {
+  margin-top: 1.4rem;
+}
+
+// меньше воздуха под тегами внутри шапки поста (было 2.5em)
+@media (min-width: 992px) {
+  .quarto-title-banner {
+    padding-bottom: 1.875em;
+  }
+}
+
+// шутка в начале поста: ::: {.quip}
+.quip {
+  margin: 0 0 1.75rem;
+  padding: .1rem 0 .1rem 1rem;
+  border-left: 3px solid rgba($emerald, .55);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: $emerald;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// превью поста в ленте: квадрат, скругление, лёгкий зум на ховере
+div.quarto-post .thumbnail {
+  a {
+    display: block;
+    margin-top: .4em; // отступ Quarto переносим с картинки на рамку
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba($emerald, .08), 0 4px 16px rgba($emerald, .08);
+  }
+
+  img.thumbnail-image {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 35%;
+    transition: transform .4s ease;
+  }
+}
+
+.quarto-post:hover .thumbnail .thumbnail-image {
+  transform: scale(1.04);
+}
+
+// карточка поста: превью слева + контент (заголовок, описание, дата под ними)
+div.quarto-post:has(.thumbnail-image) {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  // третья пустая строка забирает лишнюю высоту, чтобы дата стояла сразу под описанием
+  grid-template-rows: auto auto 1fr;
+  column-gap: 1rem;
+  row-gap: 0; // Quarto ставит карточке gap: 2em — по вертикали он не нужен
+  align-items: start;
+
+  .thumbnail {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .body {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .metadata {
+    grid-column: 2;
+    grid-row: 2;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+// пост без картинки — просто контент на всю ширину, дата под описанием
+div.quarto-post:not(:has(.thumbnail-image)) {
+  flex-direction: column;
+  gap: 0;
+
+  .thumbnail { display: none; }
+
+  .body { order: 1; }
+
+  .metadata {
+    order: 2;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  div.quarto-post .thumbnail a {
+    margin-top: .2em;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  div.quarto-post:has(.thumbnail-image) {
+    grid-template-columns: 180px 1fr;
+    column-gap: 2rem;
+  }
+}
+
+// мобильное меню выпадает поверх страницы, а не сдвигает её вниз
+@media (max-width: 991.98px) {
+  #quarto-header .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: .25rem 1.5rem 1rem;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba($emerald, .12);
+  }
+}
+
+// бургер: без рамки и обводки при нажатии; в открытом состоянии — розовый крестик
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  // для навигации с клавиатуры оставляем аккуратную обводку
+  &:focus-visible {
+    outline: 2px solid rgba($emerald, .4);
+    outline-offset: 2px;
+  }
+
+  &[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23E0607E' stroke-linecap='round' stroke-width='2' d='M8 8l14 14M22 8L8 22'/%3e%3c/svg%3e");
+  }
+}
+
+// мобильное меню: крупный пункт About, под ним разделитель и ряд иконок в кругах
+@media (max-width: 991.98px) {
+  #quarto-header .navbar-collapse .navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+  }
+
+  #quarto-header .navbar-nav .nav-item:not(.compact) {
+    flex-basis: 100%;
+    padding-bottom: .75rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid rgba($emerald, .1);
+
+    .nav-link {
+      padding: .5rem 0 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  #quarto-header .navbar-nav .nav-item.compact .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba($emerald, .06);
+    font-size: 1.15rem;
+    transition: background-color $hover-transition, color $hover-transition;
+
+    &:hover,
+    &:focus-visible {
+      background: $blush-soft;
+    }
+
+    .menu-text {
+      display: none;
+    }
+  }
+}
+
+// заголовок поста в ленте розовеет при наведении на карточку (вместе с зумом превью)
+div.quarto-post .listing-title a {
+  transition: color $hover-transition;
+}
+
+div.quarto-post:hover .listing-title a,
+div.quarto-post .listing-title a:focus-visible {
+  color: $rose;
 }

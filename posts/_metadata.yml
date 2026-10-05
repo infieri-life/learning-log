@@ -6,3 +6,10 @@ freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
+
+# та же сетка, что на главной — колонка выровнена по шапке
+page-layout: full
+
+# своя шапка поста — дата внутри баннера
+template-partials:
+  - ../partials/title-block.html

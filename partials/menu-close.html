@@ -1,0 +1,29 @@
+<script>
+// мобильное меню закрывается по тапу вне шапки и по Esc
+(function () {
+  function openMenu() {
+    var menu = document.getElementById("navbarCollapse");
+    return menu && menu.classList.contains("show") ? menu : null;
+  }
+
+  function hide(menu) {
+    window.bootstrap.Collapse.getOrCreateInstance(menu, { toggle: false }).hide();
+  }
+
+  // capture: тап мимо меню только закрывает его и не срабатывает на ссылке под ним
+  document.addEventListener("click", function (e) {
+    var menu = openMenu();
+    if (!menu || e.target.closest("#quarto-header")) return;
+    e.preventDefault();
+    e.stopPropagation();
+    hide(menu);
+  }, true);
+
+  document.addEventListener("keydown", function (e) {
+    var menu = openMenu();
+    if (!menu || e.key !== "Escape") return;
+    hide(menu);
+    document.querySelector(".navbar-toggler").focus();
+  });
+})();
+</script>

@@ -1,0 +1,44 @@
+---
+title: "Weeks 1-2: first, set up the calendar"
+description: "What I learned in my first two weeks of switching from frontend to bioengineering"
+date: "2026-10-05"
+categories: [weekly]
+image: cover.jpg
+---
+
+::: {.quip}
+No one has pushed a hotfix to the genome yet, so I'm reading the legacy code.
+:::
+
+## What I did
+
+- Started *Essence of Linear Algebra* by 3Blue1Brown and got through six of the videos.
+- Began MIT Missing Semester — the shell lecture.
+- Studied High School Biology every single day on Khan Academy, 30–35 minutes each day.
+- Set up this blog: Quarto, a GitHub repo, and a lot of time spent picking a logo (obviously, the top importance).
+- Ran three times a week and did two strength sessions each week. Because the golden rule is: the more you stress your brain, the more you should stress your body (in the common sense of the word).
+
+## What clicked
+
+Biology happened every day, the code part barely happened at all. The key difference was that the biology has its own time slot in my calendar before work, when my mind is mostly fresh. So time-management is everything when you have too much stuff to think about.
+
+## Where I got stuck
+
+3Blue1Brown explains linear algebra through geometry, and my brain doesn't do spatial pictures. I was even questioning my own knowledge about these concepts, because visual transformations of matrices made everything much more complicated. For example, I understand that the determinant is the area of the parallelogram formed by two adjacent vectors, but the narrator does rotations, scaling, or shearing of axes — and I am lost in the deep forest of geometry. Not to mention the 3D planes. 
+
+For a while I thought this was a problem I had to fix. Then I realized that in bioengineering I'll be working with data in hundreds of dimensions that nobody can picture anyway. So I'm treating it as a known weak spot and moving on.
+
+## What I'm changing
+
+Every task now gets a time block in a weekly calendar, with a start and an end. Studying moves to the morning, before work, where it's already proven its efficiency. But also I have an hour after work, but for more relaxing studying tasks. 
+
+## Next week
+
+- Missing Semester (lectures 2 — 7)
+- The Linux Command Line (chapters 1-5)
+- Python for Data Analysis (chapters 1-2)
+- Solve some Rosalind problems
+- Mock IELTS
+- High School Biology every day
+- 3Blue1Brown (lessons 7-16)
+

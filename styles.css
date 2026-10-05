@@ -6,6 +6,7 @@
 }
 
 .column-page {
+    width: 100%;
     max-width: calc(850px - 3em);
     margin-inline: auto;
 }

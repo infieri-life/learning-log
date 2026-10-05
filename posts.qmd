@@ -1,5 +1,6 @@
 ---
 title: "All posts"
+page-layout: full
 listing:
   contents: posts
   sort: "date desc"

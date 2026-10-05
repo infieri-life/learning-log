@@ -14,15 +14,19 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/infieri-life
+        aria-label: GitHub
       - icon: bluesky
         href: https://bsky.app/profile/твой-профиль
+        aria-label: Bluesky
       - icon: envelope-at-fill
         href: mailto:infieri.life@gmail.com
+        aria-label: Email
 format:
   html:
     theme: [cosmo, custom.scss]
     css: styles.css
     anchor-sections: false
+    include-after-body: partials/menu-close.html
 
 
 
