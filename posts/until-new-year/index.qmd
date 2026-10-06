@@ -1,0 +1,48 @@
+---
+title: "The plan: fifteen weeks to January"
+description: "What I'm learning, building and aiming for before 2027 starts"
+date: "2026-09-25"
+categories: [plans]
+image: cover.jpg
+---
+
+::: {.quip}
+Every plan survives until the first Monday.
+:::
+
+I came up with a huge plan for the new year. But what do I do with the four months before it? There's no point in sitting around waiting for January. So I decided to take some of the weight off next year and start now.
+
+## What I'm learning
+
+In this order, because each step leans on the one before:
+
+1. **MIT Missing Semester** — filling the gaps. After eight years I use git and the shell every day, but mostly the same ten commands. Bioinformatics lives in the terminal, so it's time to learn these tools properly.
+2. **The Linux Command Line**, parts 1–2 — going deeper while the terminal is fresh.
+3. **Python for Data Analysis**, chapters 1–10 — NumPy and pandas.
+4. **Rosalind** — 30 bioinformatics problems to practise Python on real tasks.
+5. **R for Data Science** — the tidyverse and plotting.
+6. **Harvard Stat 110**, lectures 1–17 — probability.
+7. **Essential Cell Biology** (Alberts), chapters 1–9, alongside MITx **The Secret of Life**.
+
+Biology runs alongside all of this every morning, on **Khan Academy**. I finished Middle School Biology over the summer, I'm now working through High School Biology, and AP/College Biology comes next — maybe chemistry after that. I also started a Harvard course on mitochondria earlier, and I'd like to come back to it once the basics are in place.
+
+And linear algebra with 3Blue1Brown — taking it slowly. Geometry is my weak spot, and these videos are worth watching carefully rather than quickly.
+
+## What I'm building
+
+- This blog, with a weekly log every Monday.
+- My first pull request to an open-source project.
+- A small project in December: one public dataset, from raw data to a few clear plots, all in Python.
+
+## What success looks like in December
+
+- I can work in the terminal without googling every command.
+- *Python for Data Analysis* and 30 Rosalind problems are done, and pandas feels like a tool, not a puzzle.
+- High School Biology on Khan Academy is finished.
+- My first pull request is submitted, merged or not.
+- The December project is published here, with code and plots.
+- There's a weekly log for every week, including the ones that went badly.
+- My third 5K race in October, run better than the first two.
+- An 8K race in December — the longest distance I'll have actually run, not walked.
+
+If I get most of this done, the plan worked. If I don't, the log will show exactly where it broke, and that's useful too.

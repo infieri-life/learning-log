@@ -19,8 +19,8 @@ This site is my open log: what I study each week, what I build, and where I get 
 Outside of the lab-to-be, I'm learning to run, which turns out to be just as humbling as learning biology.
 
 ::: {.about-links}
-[[]{.bi .bi-github} GitHub](https://github.com/infieri-life){target="_blank"}
-[[]{.bi .bi-bluesky} Bluesky](https://bsky.app/){target="_blank"}
-[[]{.bi .bi-linkedin} LinkedIn](https://linkedin.com){target="_blank"}
-[[]{.bi .bi-envelope-at-fill} Email](mailto:infieri.life@gmail.com)
+[[]{.bi .bi-github} GitHub](https://github.com/semper-infieri){target="_blank"}
+[[]{.bi .bi-bluesky} Bluesky](https://bsky.app/profile/semper-infieri.bsky.social){target="_blank"}
+[[]{.bi .bi-linkedin} LinkedIn](https://www.linkedin.com/in/yana-gorobets-366687441/){target="_blank"}
+[[]{.bi .bi-envelope-at-fill} Email](mailto:semper.infieri@gmail.com)
 :::
