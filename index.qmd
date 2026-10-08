@@ -1,5 +1,6 @@
 ---
 title: "Learning to read cells"
+description-meta: "A frontend developer learning to read cells: notes, deep dives and projects on the way to bioengineering."
 page-layout: full
 listing:
   - id: recent

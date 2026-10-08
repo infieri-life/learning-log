@@ -2,10 +2,11 @@ project:
   type: website
 
 website:
-  description: "A blog built with Quarto"
-  site-url: https://your-website-url.example.com # you must change this appropriately for RSS feeds to work properly
+  description: "A frontend developer learning to read cells: notes, deep dives and projects on the way to bioengineering."
+  site-url: https://semper-infieri.github.io/learning-log/
   title: "semper in fieri"
   favicon: logo.svg
+  open-graph: true
   navbar:
     pinned: true
     logo: logo.svg
