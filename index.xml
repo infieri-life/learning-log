@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>semper in fieri</title>
+<link>https://your-website-url.example.com/</link>
+<atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>A blog built with Quarto</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Wed, 07 Oct 2026 18:00:00 GMT</lastBuildDate>
+<item>
+  <title>The tenants inside every cell</title>
+  <link>https://your-website-url.example.com/posts/003-mitochondria/</link>
+  <description><![CDATA[ 
+
+<!-- шапка поста: как баннер Quarto, но дата внутри баннера, а не под ним -->
+
+
+
+<div class="quip">
+<p>Two billion years later, the tenants are still paying rent in ATP.</p>
+</div>
+<p><em>“The mitochondria is the powerhouse of the cell”</em> is pretty much all I remembered from school biology. Then I started learning it properly and found out that this little organelle has its own DNA, a two-billion-year-old backstory, and a very particular way of being passed down in families. Here’s what surprised me most.</p>
+<section id="more-than-a-powerhouse" class="level2">
+<h2 data-anchor-id="more-than-a-powerhouse">More than a powerhouse</h2>
+<p>Our cells contain different parts, and each of them has its own job. These parts are called organelles. One of them, <em>the mitochondrion</em>, works as the “powerhouse of the cell”: it breaks down sugars, fats, and sometimes even proteins, and turns them into energy that the cell stores in molecules of adenosine triphosphate, or ATP for short.</p>
+<p>Mitochondria are often pictured as beans floating in the fluid inside the cell, the <em>cytosol</em>. But in fact, they are constantly on the move: special motor proteins pull them along the cell’s “skeleton”, called the <em>cytoskeleton</em>. Thanks to this, mitochondria can end up exactly where energy is needed most.</p>
+<p>I used to think there was only one mitochondrion in a cell, because that is how cells are usually drawn in diagrams. It turns out that is not true: a cell can contain many mitochondria, and where a lot of energy is needed, there can be several thousand of them in a single cell — for example, in neurons and heart muscle cells. What’s more, mitochondria can divide and fuse with each other, adjusting their number to the cell’s needs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="image-1.jpg" class="lightbox" data-gallery="mitochondria" title="A human cell with its main organelles. (AI-generated image)"><img src="https://your-website-url.example.com/posts/003-mitochondria/image-1.jpg" class="img-fluid figure-img" alt="Illustration of a human cell with the nucleus, endoplasmic reticulum, Golgi apparatus, lysosomes and several mitochondria"></a></p>
+<figcaption>A human cell with its main organelles. (AI-generated image)</figcaption>
+</figure>
+</div>
+</section>
+<section id="swallowed-but-not-broken" class="level2">
+<h2 data-anchor-id="swallowed-but-not-broken">Swallowed but not broken</h2>
+<p>Here is one of the most surprising facts: mitochondria have their own DNA! And it is not like the DNA stored in the nucleus. Nuclear DNA is organized into long chromosomes and tucked away behind the nuclear envelope, while mitochondrial DNA is a small ring that lies right inside the organelle. Bacteria have similar circular DNA — and that is no coincidence.</p>
+<p>This is explained by the endosymbiotic theory <span class="citation" data-cites="roger2017">(Roger et al. 2017)</span>. About two billion years ago, the ancestors of mitochondria were independent bacteria. At some point a larger cell engulfed one of these bacteria, but did not digest it,&nbsp;and the bacterium stayed alive inside. The result was a mutually beneficial partnership: the larger cell supplied the bacterium with nutrients, and the bacterium turned them into energy. Hence the name: “endo” means&nbsp;inside, and “symbiosis” means living together to the benefit of both.</p>
+<p>By the way, the same thing happened to chloroplasts, the organelles that make plants green. They were once bacteria too, just a different kind: cyanobacteria that could photosynthesize.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="image-2.jpg" class="lightbox" data-gallery="mitochondria" title="Mitochondria came from an alphaproteobacterium; chloroplasts, later, from a cyanobacterium. (AI-generated image)"><img src="https://your-website-url.example.com/posts/003-mitochondria/image-2.jpg" class="img-fluid figure-img" alt="Diagram: a host cell engulfs an alphaproteobacterium that becomes a mitochondrion; later a cyanobacterium becomes a chloroplast"></a></p>
+<figcaption>Mitochondria came from an alphaproteobacterium; chloroplasts, later, from a cyanobacterium. (AI-generated image)</figcaption>
+</figure>
+</div>
+<p>It would be logical to assume that the other organelles were once bacteria too, swallowed by big Pac-Men. But that is not the case. According to the leading hypothesis, the endoplasmic reticulum, lysosomes and the Golgi apparatus were “molded” out of the cell’s own membrane. Imagine pressing your finger into a balloon: a pocket forms on the surface. If the edges of the pocket closed and it pinched off, you would get a separate bubble wrapped in its own film. That is how, fold by fold, the cell acquired its internal compartments. And that is why these organelles have no DNA of their own, unlike mitochondria, which arrived from outside with theirs.</p>
+</section>
+<section id="moving-out-of-a-dangerous-neighborhood" class="level2">
+<h2 data-anchor-id="moving-out-of-a-dangerous-neighborhood">Moving out of a dangerous neighborhood</h2>
+<p>But why did almost all the genes move to the nucleus instead of staying inside the mitochondria? The thing is, it is dangerous in there. When mitochondria produce energy, electrons are passed along their inner membrane, like on a conveyor belt. Sometimes an electron jumps off the belt too early and collides with oxygen. This produces unstable, aggressive molecules, such as superoxide or hydrogen peroxide. You can think of them as sparks from a stove that burn through everything nearby.</p>
+<p>Inside the nucleus, DNA is safe: it is separated from the rest of the cell by the nuclear envelope, which has two membranes, and it is tightly packed and wound around protective proteins. Mitochondrial DNA, on the other hand, lies right next to the “stove” and is almost “naked”. Moreover, DNA repair systems are weaker in mitochondria than in the nucleus, so some of the damage stays unrepaired.</p>
+<p>As a result, only 37 genes remain in human mitochondrial DNA <span class="citation" data-cites="anderson1981">(Anderson et al. 1981)</span>. It is more beneficial to keep them inside, so that each organelle can adjust its energy production to its own needs without waiting for a command from the nucleus <span class="citation" data-cites="allen_why_2015">(Allen 2015)</span>.</p>
+<div class="spoiler">
+<p>These 37 genes are where my December project begins. I am going to take the mitochondrial genomes of humans, mice, fish, flies and yeast and analyze them: why the yeast genome is several times longer than ours even though it has almost the same number of genes, what order the genes are in around the ring, and how mitochondria read the genetic code in their own way, slightly differently from the rest of the cell.</p>
+</div>
+</section>
+<section id="hand-me-downs-from-mom" class="level2">
+<h2 data-anchor-id="hand-me-downs-from-mom">Hand-me-downs from Mom</h2>
+<p>And here is a fact that surprised me even more: we inherit almost all of our mitochondria from our moms! A child gets half of its nuclear DNA from its dad, but everything else in the cell, including the mitochondria, comes from the egg. In fact, the egg holds the record for mitochondria: a single egg contains about a hundred thousand of them <span class="citation" data-cites="babayev_oocyte_2015">(Babayev and Seli 2015)</span>!</p>
+<p>A sperm cell has mitochondria too — they sit at the base of its tail, where they power its swim to the finish line. But after fertilization, the mother’s egg marks the father’s mitochondria as unnecessary, and they are soon destroyed <span class="citation" data-cites="sutovsky_ubiquitin_1999">(Sutovsky et al. 1999)</span>. Meanwhile, the egg’s own mitochondria remain and supply the embryo’s first cells with energy while they are still <em>in fieri</em>. So that is yet another reason to thank your mom!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="image-3.jpg" class="lightbox" data-gallery="mitochondria" title="Mitochondrial DNA passes only down the maternal line: sons inherit it but don’t pass it on. (AI-generated image)"><img src="https://your-website-url.example.com/posts/003-mitochondria/image-3.jpg" class="img-fluid figure-img" alt="Family tree: mitochondrial DNA passes from grandmother to mother to both children, while fathers and sons do not pass it on."></a></p>
+<figcaption>Mitochondrial DNA passes only down the maternal line: sons inherit it but don’t pass it on. (AI-generated image)</figcaption>
+</figure>
+</div>
+</section>
+<section id="summing-up" class="level2">
+<h2 data-anchor-id="summing-up">Summing up</h2>
+<p>Put it all together, and it sounds almost like science fiction: every one of our cells is home to the descendants of bacteria that were once swallowed but never digested. They still keep their own DNA, work for us, and are passed down only from our mothers. In school, the mitochondrion was just a line for me: “the powerhouse of the cell”. It turned out to be a two-billion-year-long story.</p>
+<p>I wonder what else in the cell will turn out to be different from how it’s drawn in diagrams.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-allen_why_2015" class="csl-entry">
+Allen, John F. 2015. <span>“Why Chloroplasts and Mitochondria Retain Their Own Genomes and Genetic Systems: <span>Colocation</span> for Redox Regulation of Gene Expression.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> (United States) 112 (33): 10231–38. <a href="https://doi.org/10.1073/pnas.1500012112">https://doi.org/10.1073/pnas.1500012112</a>.
+</div>
+<div id="ref-anderson1981" class="csl-entry">
+Anderson, S., A. T. Bankier, B. G. Barrell, et al. 1981. <span>“Sequence and Organization of the Human Mitochondrial Genome.”</span> <em>Nature</em> 290 (5806): 457–65. <a href="https://doi.org/10.1038/290457a0">https://doi.org/10.1038/290457a0</a>.
+</div>
+<div id="ref-babayev_oocyte_2015" class="csl-entry">
+Babayev, Elnur, and Emre Seli. 2015. <span>“Oocyte Mitochondrial Function and Reproduction.”</span> <em>Current Opinion in Obstetrics &amp; Gynecology</em> 27 (3): 175–81. <a href="https://doi.org/10.1097/GCO.0000000000000164">https://doi.org/10.1097/GCO.0000000000000164</a>.
+</div>
+<div id="ref-roger2017" class="csl-entry">
+Roger, Andrew J., Sergio A. Muñoz-Gómez, and Ryoma Kamikawa. 2017. <span>“The Origin and Diversification of Mitochondria.”</span> <em>Current Biology</em> 27 (21): R1177–92. <a href="https://doi.org/10.1016/j.cub.2017.09.015">https://doi.org/10.1016/j.cub.2017.09.015</a>.
+</div>
+<div id="ref-sutovsky_ubiquitin_1999" class="csl-entry">
+Sutovsky, P., R. D. Moreno, J. Ramalho-Santos, T. Dominko, C. Simerly, and G. Schatten. 1999. <span>“Ubiquitin Tag for Sperm Mitochondria.”</span> <em>Nature</em> (England) 402 (6760): 371–72. <a href="https://doi.org/10.1038/46466">https://doi.org/10.1038/46466</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>deep-dive</category>
+  <guid>https://your-website-url.example.com/posts/003-mitochondria/</guid>
+  <pubDate>Wed, 07 Oct 2026 18:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/003-mitochondria/cover.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Weeks 1-2: first, set up the calendar</title>
+  <link>https://your-website-url.example.com/posts/002-week-1/</link>
+  <description><![CDATA[ 
+
+<!-- шапка поста: как баннер Quarto, но дата внутри баннера, а не под ним -->
+
+
+
+<div class="quip">
+<p>No one has pushed a hotfix to the genome yet, so I’m reading the legacy code.</p>
+</div>
+<section id="what-i-did" class="level2">
+<h2 data-anchor-id="what-i-did">What I did</h2>
+<ul>
+<li>Started <em>Essence of Linear Algebra</em> by 3Blue1Brown and got through six of the videos.</li>
+<li>Began MIT Missing Semester — the shell lecture.</li>
+<li>Studied High School Biology every single day on Khan Academy, 30–35 minutes each day.</li>
+<li>Set up this blog: Quarto, a GitHub repo, and a lot of time spent picking a logo (obviously, the top importance).</li>
+<li>Ran three times a week and did two strength sessions each week. Because the golden rule is: the more you stress your brain, the more you should stress your body (in the common sense of the word).</li>
+</ul>
+</section>
+<section id="what-clicked" class="level2">
+<h2 data-anchor-id="what-clicked">What clicked</h2>
+<p>Biology happened every day, the code part barely happened at all. The key difference was that the biology has its own time slot in my calendar before work, when my mind is mostly fresh. So time-management is everything when you have too much stuff to think about.</p>
+</section>
+<section id="where-i-got-stuck" class="level2">
+<h2 data-anchor-id="where-i-got-stuck">Where I got stuck</h2>
+<p>3Blue1Brown explains linear algebra through geometry, and my brain doesn’t do spatial pictures. I was even questioning my own knowledge about these concepts, because visual transformations of matrices made everything much more complicated. For example, I understand that the determinant is the area of the parallelogram formed by two adjacent vectors, but the narrator does rotations, scaling, or shearing of axes — and I am lost in the deep forest of geometry. Not to mention the 3D planes.</p>
+<p>For a while I thought this was a problem I had to fix. Then I realized that in bioengineering I’ll be working with data in hundreds of dimensions that nobody can picture anyway. So I’m treating it as a known weak spot and moving on.</p>
+</section>
+<section id="what-im-changing" class="level2">
+<h2 data-anchor-id="what-im-changing">What I’m changing</h2>
+<p>Every task now gets a time block in a weekly calendar, with a start and an end. Studying moves to the morning, before work, where it’s already proven its efficiency. But also I have an hour after work, but for more relaxing studying tasks.</p>
+</section>
+<section id="next-week" class="level2">
+<h2 data-anchor-id="next-week">Next week</h2>
+<ul>
+<li>Missing Semester (lectures 2 — 7)</li>
+<li>The Linux Command Line (chapters 1-5)</li>
+<li>Python for Data Analysis (chapters 1-2)</li>
+<li>Solve some Rosalind problems</li>
+<li>Mock IELTS</li>
+<li>High School Biology every day</li>
+<li>3Blue1Brown (lessons 7-16)</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>weekly</category>
+  <guid>https://your-website-url.example.com/posts/002-week-1/</guid>
+  <pubDate>Sun, 04 Oct 2026 18:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/002-week-1/cover.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The plan: fifteen weeks to January</title>
+  <link>https://your-website-url.example.com/posts/001-until-new-year/</link>
+  <description><![CDATA[ 
+
+<!-- шапка поста: как баннер Quarto, но дата внутри баннера, а не под ним -->
+
+
+
+<div class="quip">
+<p>Every plan survives until the first Monday.</p>
+</div>
+<p>I came up with a huge plan for the new year. But what do I do with the four months before it? There’s no point in sitting around waiting for January. So I decided to take some of the weight off next year and start now.</p>
+<section id="what-im-learning" class="level2">
+<h2 data-anchor-id="what-im-learning">What I’m learning</h2>
+<p>In this order, because each step leans on the one before:</p>
+<ol type="1">
+<li><strong>MIT Missing Semester</strong> — filling the gaps. After eight years I use git and the shell every day, but mostly the same ten commands. Bioinformatics lives in the terminal, so it’s time to learn these tools properly.</li>
+<li><strong>The Linux Command Line</strong>, parts 1–2 — going deeper while the terminal is fresh.</li>
+<li><strong>Python for Data Analysis</strong>, chapters 1–10 — NumPy and pandas.</li>
+<li><strong>Rosalind</strong> — 30 bioinformatics problems to practise Python on real tasks.</li>
+<li><strong>R for Data Science</strong> — the tidyverse and plotting.</li>
+<li><strong>Harvard Stat 110</strong>, lectures 1–17 — probability.</li>
+<li><strong>Essential Cell Biology</strong> (Alberts), chapters 1–9, alongside MITx <strong>The Secret of Life</strong>.</li>
+</ol>
+<p>Biology runs alongside all of this every morning, on <strong>Khan Academy</strong>. I finished Middle School Biology over the summer, I’m now working through High School Biology, and AP/College Biology comes next — maybe chemistry after that. I also started a Harvard course on mitochondria earlier, and I’d like to come back to it once the basics are in place.</p>
+<p>And linear algebra with 3Blue1Brown — taking it slowly. Geometry is my weak spot, and these videos are worth watching carefully rather than quickly.</p>
+</section>
+<section id="what-im-building" class="level2">
+<h2 data-anchor-id="what-im-building">What I’m building</h2>
+<ul>
+<li>This blog, with a weekly log every Monday.</li>
+<li>My first pull request to an open-source project.</li>
+<li>A small project in December: one public dataset, from raw data to a few clear plots, all in Python.</li>
+</ul>
+</section>
+<section id="what-success-looks-like-in-december" class="level2">
+<h2 data-anchor-id="what-success-looks-like-in-december">What success looks like in December</h2>
+<ul>
+<li>I can work in the terminal without googling every command.</li>
+<li><em>Python for Data Analysis</em> and 30 Rosalind problems are done, and pandas feels like a tool, not a puzzle.</li>
+<li>High School Biology on Khan Academy is finished.</li>
+<li>My first pull request is submitted, merged or not.</li>
+<li>The December project is published here, with code and plots.</li>
+<li>There’s a weekly log for every week, including the ones that went badly.</li>
+<li>My third 5K race in October, run better than the first two.</li>
+<li>An 8K race in December — the longest distance I’ll have actually run, not walked.</li>
+</ul>
+<p>If I get most of this done, the plan worked. If I don’t, the log will show exactly where it broke, and that’s useful too.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>plans</category>
+  <guid>https://your-website-url.example.com/posts/001-until-new-year/</guid>
+  <pubDate>Thu, 24 Sep 2026 18:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/001-until-new-year/cover.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
