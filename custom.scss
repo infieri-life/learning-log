@@ -69,6 +69,11 @@ a {
 // заголовки изумрудные
 h1, h2, h3 { color: $emerald; }
 
+// аккуратные переносы: заголовки — строки примерно равной длины,
+// абзацы — без одинокого слова в последней строке. Старые браузеры просто игнорируют
+h1, h2, h3, .description { text-wrap: balance; }
+p, li, figcaption { text-wrap: pretty; }
+
 // иерархия: H1 крупный и плотный, H2 заметно мельче и легче
 h1.title {
   font-size: 2.25rem;
@@ -208,6 +213,190 @@ main.content.quarto-banner-title-block {
 
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+// анонс будущего в посте: ::: {.spoiler}
+// светло-розовая карточка; с label="..." над текстом появится маленькая розовая метка
+.spoiler {
+  margin: 1.75rem 0;
+  padding: 1rem 1.25rem 1.1rem;
+  background: $blush-soft;
+  border-radius: 12px;
+
+  &[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: .35rem;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: $rose;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ссылка на источник в тексте [@key]: мягкая розовая «таблетка» без подчёркивания,
+// чтобы не путалась ни с обычными ссылками, ни с подчёркиванием ошибки.
+// > a — тултип вставляется внутрь .citation, его ссылки это правило не трогает
+.citation[data-cites] {
+  padding: .05em .4em;
+  border-radius: 6px;
+  background: $blush-soft;
+  color: rgba($emerald, .75);
+  font-size: .85em;
+  // может разорваться между строками; каждый кусок — со своими скруглёнными краями
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-color $hover-transition;
+
+  > a {
+    color: $emerald;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: rgba($rose, .18);
+  }
+}
+
+// тултип источника (Quarto делает его через tippy с темой quarto):
+// белая карточка со скруглением и мягкой тенью, как у картинок
+.tippy-box[data-theme~=quarto] {
+  max-width: min(420px, calc(100vw - 32px)) !important;
+  background: #fff;
+  border: 1px solid rgba($emerald, .1);
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba($emerald, .06), 0 12px 32px rgba($emerald, .14);
+  color: $ink;
+  font-size: .85rem;
+  line-height: 1.5;
+
+  .tippy-content {
+    padding: .85rem 1rem;
+  }
+
+  // в тултипе висячий отступ списка литературы не нужен
+  .csl-entry {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+
+    + .csl-entry {
+      margin-top: .6rem;
+      padding-top: .6rem;
+      border-top: 1px solid rgba($emerald, .1);
+    }
+  }
+
+  em {
+    color: $emerald;
+  }
+
+  a {
+    color: $emerald;
+    overflow-wrap: anywhere; // длинный DOI переносится, только если не влезает целиком
+    text-decoration-color: rgba($emerald, .3);
+
+    &:hover {
+      color: $rose;
+    }
+  }
+}
+
+// картинки в постах: скругление и тень как у превью, подпись мелким курсивом по центру
+#quarto-document-content .quarto-figure {
+  margin: 2rem 0;
+
+  img.figure-img {
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba($emerald, .08), 0 4px 16px rgba($emerald, .08);
+  }
+
+  a.lightbox img {
+    cursor: zoom-in;
+  }
+
+  figcaption {
+    margin-top: .75rem;
+    text-align: center;
+    font-size: .875rem;
+    font-style: italic;
+    color: rgba($ink, .65);
+  }
+}
+
+// модалка картинки (GLightbox): тёмно-изумрудный фон, скруглённая картинка,
+// подпись светлым курсивом под ней. #glightbox-body — чтобы перебить стили Quarto и GLightbox
+#glightbox-body {
+  .goverlay {
+    background: rgba(darken($emerald, 8%), .94);
+    backdrop-filter: blur(6px);
+  }
+
+  .gslide-media {
+    background: transparent;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(#000, .35);
+  }
+
+  // воздух сверху и место под подпись снизу;
+  // !important — GLightbox сам пишет max-height в style у картинки
+  .gslide-image img {
+    max-height: calc(100vh - 160px) !important;
+    max-width: calc(100vw - 32px); // на телефоне — поля по 16px, углы не упираются в край
+  }
+
+  .gslide-description {
+    background: transparent;
+  }
+
+  .gdesc-inner {
+    padding: 1rem 0 0;
+  }
+
+  .gslide-title {
+    margin: 0;
+    text-align: center;
+    font-size: .95rem;
+    font-style: italic;
+    font-weight: 400;
+    color: rgba($paper, .85);
+    background: transparent;
+  }
+
+  // кнопки: круглые, полупрозрачные, розовые на ховере
+  .gclose,
+  .gnext,
+  .gprev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba($paper, .12);
+    opacity: 1;
+    transition: background-color $hover-transition;
+
+    &:hover {
+      background-color: $rose;
+    }
+
+    // стрелка, которой некуда листать (одна картинка, начало или конец галереи)
+    &.disabled {
+      display: none;
+    }
+
+    svg {
+      width: 16px;
+    }
+
+    path {
+      fill: $paper;
+    }
   }
 }
 

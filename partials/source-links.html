@@ -1,0 +1,19 @@
+<script>
+// ссылки в списке источников (DOI и т.п.) открываются в новой вкладке;
+// тултип источника копирует разметку отсюда, так что там тоже
+document.querySelectorAll(".csl-entry a[href^='http']").forEach(function (a) {
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
+// ссылка на источник в тексте оформлена «таблеткой» — скобки вокруг неё лишние
+document.querySelectorAll(".citation[data-cites]").forEach(function (c) {
+  var first = c.firstChild, last = c.lastChild;
+  if (first && first.nodeType === 3) first.textContent = first.textContent.replace(/^\(/, "");
+  if (last && last.nodeType === 3) last.textContent = last.textContent.replace(/\)$/, "");
+  // год не остаётся один на новой строке: «Seli 2015» переносится вместе
+  c.querySelectorAll("a").forEach(function (a) {
+    a.textContent = a.textContent.replace(/ (\d{4}[a-z]?)$/, " $1");
+  });
+});
+</script>
