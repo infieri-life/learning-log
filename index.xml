@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>semper in fieri</title>
-<link>https://your-website-url.example.com/</link>
-<atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
-<description>A blog built with Quarto</description>
+<link>https://semper-infieri.github.io/learning-log/</link>
+<atom:link href="https://semper-infieri.github.io/learning-log/index.xml" rel="self" type="application/rss+xml"/>
+<description>A frontend developer learning to read cells: notes, deep dives and projects on the way to bioengineering.</description>
 <generator>quarto-1.10.18</generator>
 <lastBuildDate>Wed, 07 Oct 2026 18:00:00 GMT</lastBuildDate>
 <item>
   <title>The tenants inside every cell</title>
-  <link>https://your-website-url.example.com/posts/003-mitochondria/</link>
+  <link>https://semper-infieri.github.io/learning-log/posts/003-mitochondria/</link>
   <description><![CDATA[ 
 
 <!-- шапка поста: как баннер Quarto, но дата внутри баннера, а не под ним -->
@@ -31,7 +31,7 @@
 <p>I used to think there was only one mitochondrion in a cell, because that is how cells are usually drawn in diagrams. It turns out that is not true: a cell can contain many mitochondria, and where a lot of energy is needed, there can be several thousand of them in a single cell — for example, in neurons and heart muscle cells. What’s more, mitochondria can divide and fuse with each other, adjusting their number to the cell’s needs.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="image-1.jpg" class="lightbox" data-gallery="mitochondria" title="A human cell with its main organelles. (AI-generated image)"><img src="https://your-website-url.example.com/posts/003-mitochondria/image-1.jpg" class="img-fluid figure-img" alt="Illustration of a human cell with the nucleus, endoplasmic reticulum, Golgi apparatus, lysosomes and several mitochondria"></a></p>
+<p><a href="image-1.jpg" class="lightbox" data-gallery="mitochondria" title="A human cell with its main organelles. (AI-generated image)"><img src="https://semper-infieri.github.io/learning-log/posts/003-mitochondria/image-1.jpg" class="img-fluid figure-img" alt="Illustration of a human cell with the nucleus, endoplasmic reticulum, Golgi apparatus, lysosomes and several mitochondria"></a></p>
 <figcaption>A human cell with its main organelles. (AI-generated image)</figcaption>
 </figure>
 </div>
@@ -43,7 +43,7 @@
 <p>By the way, the same thing happened to chloroplasts, the organelles that make plants green. They were once bacteria too, just a different kind: cyanobacteria that could photosynthesize.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="image-2.jpg" class="lightbox" data-gallery="mitochondria" title="Mitochondria came from an alphaproteobacterium; chloroplasts, later, from a cyanobacterium. (AI-generated image)"><img src="https://your-website-url.example.com/posts/003-mitochondria/image-2.jpg" class="img-fluid figure-img" alt="Diagram: a host cell engulfs an alphaproteobacterium that becomes a mitochondrion; later a cyanobacterium becomes a chloroplast"></a></p>
+<p><a href="image-2.jpg" class="lightbox" data-gallery="mitochondria" title="Mitochondria came from an alphaproteobacterium; chloroplasts, later, from a cyanobacterium. (AI-generated image)"><img src="https://semper-infieri.github.io/learning-log/posts/003-mitochondria/image-2.jpg" class="img-fluid figure-img" alt="Diagram: a host cell engulfs an alphaproteobacterium that becomes a mitochondrion; later a cyanobacterium becomes a chloroplast"></a></p>
 <figcaption>Mitochondria came from an alphaproteobacterium; chloroplasts, later, from a cyanobacterium. (AI-generated image)</figcaption>
 </figure>
 </div>
@@ -64,7 +64,7 @@
 <p>A sperm cell has mitochondria too — they sit at the base of its tail, where they power its swim to the finish line. But after fertilization, the mother’s egg marks the father’s mitochondria as unnecessary, and they are soon destroyed <span class="citation" data-cites="sutovsky_ubiquitin_1999">(Sutovsky et al. 1999)</span>. Meanwhile, the egg’s own mitochondria remain and supply the embryo’s first cells with energy while they are still <em>in fieri</em>. So that is yet another reason to thank your mom!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="image-3.jpg" class="lightbox" data-gallery="mitochondria" title="Mitochondrial DNA passes only down the maternal line: sons inherit it but don’t pass it on. (AI-generated image)"><img src="https://your-website-url.example.com/posts/003-mitochondria/image-3.jpg" class="img-fluid figure-img" alt="Family tree: mitochondrial DNA passes from grandmother to mother to both children, while fathers and sons do not pass it on."></a></p>
+<p><a href="image-3.jpg" class="lightbox" data-gallery="mitochondria" title="Mitochondrial DNA passes only down the maternal line: sons inherit it but don’t pass it on. (AI-generated image)"><img src="https://semper-infieri.github.io/learning-log/posts/003-mitochondria/image-3.jpg" class="img-fluid figure-img" alt="Family tree: mitochondrial DNA passes from grandmother to mother to both children, while fathers and sons do not pass it on."></a></p>
 <figcaption>Mitochondrial DNA passes only down the maternal line: sons inherit it but don’t pass it on. (AI-generated image)</figcaption>
 </figure>
 </div>
@@ -96,13 +96,13 @@ Sutovsky, P., R. D. Moreno, J. Ramalho-Santos, T. Dominko, C. Simerly, and G. Sc
 </div>
 </div></section></div> ]]></description>
   <category>deep-dive</category>
-  <guid>https://your-website-url.example.com/posts/003-mitochondria/</guid>
+  <guid>https://semper-infieri.github.io/learning-log/posts/003-mitochondria/</guid>
   <pubDate>Wed, 07 Oct 2026 18:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/003-mitochondria/cover.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://semper-infieri.github.io/learning-log/posts/003-mitochondria/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Weeks 1-2: first, set up the calendar</title>
-  <link>https://your-website-url.example.com/posts/002-week-1/</link>
+  <link>https://semper-infieri.github.io/learning-log/posts/002-week-1/</link>
   <description><![CDATA[ 
 
 <!-- шапка поста: как баннер Quarto, но дата внутри баннера, а не под ним -->
@@ -152,13 +152,13 @@ Sutovsky, P., R. D. Moreno, J. Ramalho-Santos, T. Dominko, C. Simerly, and G. Sc
 
  ]]></description>
   <category>weekly</category>
-  <guid>https://your-website-url.example.com/posts/002-week-1/</guid>
+  <guid>https://semper-infieri.github.io/learning-log/posts/002-week-1/</guid>
   <pubDate>Sun, 04 Oct 2026 18:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/002-week-1/cover.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://semper-infieri.github.io/learning-log/posts/002-week-1/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>The plan: fifteen weeks to January</title>
-  <link>https://your-website-url.example.com/posts/001-until-new-year/</link>
+  <link>https://semper-infieri.github.io/learning-log/posts/001-until-new-year/</link>
   <description><![CDATA[ 
 
 <!-- шапка поста: как баннер Quarto, но дата внутри баннера, а не под ним -->
@@ -211,9 +211,9 @@ Sutovsky, P., R. D. Moreno, J. Ramalho-Santos, T. Dominko, C. Simerly, and G. Sc
 
  ]]></description>
   <category>plans</category>
-  <guid>https://your-website-url.example.com/posts/001-until-new-year/</guid>
+  <guid>https://semper-infieri.github.io/learning-log/posts/001-until-new-year/</guid>
   <pubDate>Thu, 24 Sep 2026 18:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/001-until-new-year/cover.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://semper-infieri.github.io/learning-log/posts/001-until-new-year/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
